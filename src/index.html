@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+<link rel="stylesheet" href="style.css">    
+  </head>
+
+  <body class="container-fluid">
+    <!-- Navbar -->
+    <header id="navbar" class="fixed-top py-3">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <h1 class="fs-3 fw-bold mb-0">
+              <span class="text-burgundy">Bookish</span><span>Bundle</span>
+            </h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#fiction">Fiction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#non-fiction">Non-Fiction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#self-help">Self-Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#business">Business</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <button class="btn btn-link me-3 text-dark">
+                <i class="bi bi-search"></i>
+              </button>
+              <button class="btn btn-link text-dark position-relative">
+                <i class="bi bi-cart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-burgundy">
+                  0
+                </span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="py-5">
+        <div class="container py-5 mt-5">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="badge bg-burgundy-light text-burgundy mb-3 px-3 py-2 rounded-pill">
+                The joy of reading, delivered to your doorstep
+              </div>
+              <h1 class="display-4 fw-bold mb-4 playfair">
+                Discover worlds between pages at <span class="text-burgundy">BookishBundle</span>
+              </h1>
+              <p class="lead mb-4">
+                Your journey through countless stories begins here. From timeless classics to modern masterpieces, find the perfect companion for your reading adventure.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="#Explore" class="btn btn-burgundy btn-lg">
+                  Explore Collections <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+                <a href="#bestsellers" class="btn btn-outline-dark btn-lg">
+                  Bestsellers
+                </a>
+              </div>
+            </div>
+           
+          </div>
+      </section>
+
+      <!-- Featured Books Section -->
+      <section id="bestsellers" class="py-5 bg-paper">
+        <div class="container py-5">
+          <div class="row justify-content-between align-items-end mb-4">
+            <div class="col-md-8">
+              <h2 class="display-5 playfair fw-bold">Featured Books</h2>
+            </div>
+  
+          </div>
+          
+          <div class="row">
+            <div class="col-12">
+              <div class="books-section d-flex flex-wrap justify-content-center gap-5">
+                <div class="wrapper">
+                  <div class="book-card">
+                    <!-- Front Side -->
+                    <div class="book-card__front">
+                      <div class="book-card__image">
+                        <img src="public/image/the-5-am-club-original-book3.webp" alt="5-am-club" />
+                      </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="book-card__back">
+                      <div class="details">
+                        <a href="5AM-details.html">click for details</a>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="wrapper">
+                  <div class="book-card">
+                    <!-- Front Side -->
+                    <div class="book-card__front">
+                      <div class="book-card__image">
+                        <img src="public/image/the-monk-who-sold-his-ferrari-book1.webp" alt="theMonk" />
+                      </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="book-card__back">
+                      <div class="details">
+                        <a href="theMonk.html">click for details</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="wrapper">
+                  <div class="book-card">
+                    <!-- Front Side -->
+                    <div class="book-card__front">
+                      <div class="book-card__image">
+                        <img src="public/image/Psychology-of-money.webp" alt="Psychology-of-money" />
+                      </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="book-card__back">
+                      <div class="details">
+                        <a href="the-psychology-of-money.html">click for details</a>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wrapper">
+                  <div class="book-card">
+                    <!-- Front Side -->
+                    <div class="book-card__front">
+                      <div class="book-card__image">
+                        <img src="public/image/atomic-habit.jpeg" alt="atomic-habit" />
+                      </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="book-card__back">
+                      <div class="details">
+                        <a href="atomic-habit.html">click for details</a>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center m-5">
+            <a href="#" class="text-burgundy fw-medium">
+              View all books <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="bg-navy text-white">
+      <div class="container py-4">
+        <div class="row g-5">
+          <div class="col-lg-3 ">
+            <h3 class="mb-4 fs-4 fw-bold">
+              <span class="text-white">Bookish</span><span class="text-burgundy">Bundle</span>
+            </h3>
+            <p class="text-white-75 mb-4">
+              Your trusted companion in the world of literature, delivering stories that inspire, educate, and entertain.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="404.html" class="btn btn-dark rounded-circle">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="404.html"class="btn btn-dark rounded-circle">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="404.html" class="btn btn-dark rounded-circle">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+            <div class="col-lg-3 ">
+              <h4 class="playfair fw-bold mb-4" id="Explore">Explore</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#fiction" class="text-white-75 text-decoration-none hover-white">Fiction</a></li>
+                <li class="mb-2"><a href="#non-fiction" class="text-white-75 text-decoration-none hover-white">Non-Fiction</a></li>
+                <li class="mb-2"><a href="#self-help" class="text-white-75 text-decoration-none hover-white">Self-Help</a></li>
+                <li class="mb-2"><a href="#business" class="text-white-75 text-decoration-none hover-white">Business</a></li>
+                <li class="mb-2"><a href="#" class="text-white-75 text-decoration-none hover-white">New Releases</a></li>
+                <li><a href="#bestsellers" class="text-white-75 text-decoration-none hover-white">Bestsellers</a></li>
+              </ul>
+            </div>
+         
+      </div>
+      <div class="border-top border-white-10 mt-5 pt-4 text-center text-white-50">
+        <p class="mb-0 small">&copy; <span id="current-year"></span> BookishBundle. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- jQuery (Required for Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap Bundle (Includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

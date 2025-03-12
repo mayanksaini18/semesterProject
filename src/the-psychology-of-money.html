@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Psychology of Money - Summary</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+      }
+      .card {
+        width: 100%;
+        max-width: 350px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+      }
+      .card-img img {
+        max-width: 100%;
+      }
+      .card-info {
+        margin-top: 15px;
+      }
+      details {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #f9f9f9;
+      }
+      summary {
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .icon {
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 5px 10px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body class="container-fluid">
+   
+    <div class="d-flex justify-content-between">
+      <h2 style="text-decoration: underline;" >The Psychology of Money - Summary</h2>
+  
+        <a href="index.html" class=" bi bi-box-arrow-in-left btn btn-outline-dark ">
+          Back
+        </a>
+      </div>
+
+   
+    <div class="card">
+        <div class="card-img">
+            <img src="../Semester-project/public/image/Psychology-of-money.webp" alt="The-Psychology-of-Money">
+        </div>
+    </div>
+        
+    <div class="card-info">
+        <p class="card-text">Author: Morgan Housel</p>
+        <p class="card-text">Published: 2020</p>
+        <ul>
+            <li>Genre: Finance, Self-help</li>
+            <li>Pages: 256</li>
+            <li>Price: $14.99</li>
+        </ul>
+    </div>
+
+    <details>
+        <summary>Overview</summary>
+        <div>
+            The Psychology of Money explores the emotional and psychological aspects of money, wealth, and financial decision-making. 
+            It emphasizes the importance of behavior over intelligence when it comes to financial success.
+        </div>
+    </details>
+
+    <details>
+        <summary>Index</summary>
+        <div>
+            <p>1. No One’s Crazy<br>2. Luck & Risk<br>3. Never Enough<br>4. Confounding Compounding<br>5. Getting Wealthy vs. Staying Wealthy...</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>Lessons</summary>
+        <div>
+            <p>Wealth is not about income; it’s about saving and investing.<br>
+              Compounding is the most powerful force in finance.<br>
+              Risk and luck play a bigger role in success than most people realize.<br>
+              Financial independence is more valuable than luxury purchases.<br>
+              The hardest skill in finance is controlling emotions and sticking to a plan.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>About the Author</summary>
+        <div>
+            <p>Morgan Housel is an award-winning financial writer, investor, and partner at The Collaborative Fund. 
+              He has written for The Wall Street Journal and The Motley Fool, offering unique insights into money and human behavior.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>Purchasing Links</summary>
+        <div>
+            <p>Buy the book from:</p>
+            <ul>
+                <li><a href="https://www.amazon.com/Psychology-Money-Timeless-lessons-happiness/dp/0857197681" target="_blank">Amazon</a></li>
+                <li><a href="https://www.flipkart.com/" target="_blank">Flipkart</a></li>
+            </ul>
+        </div>
+    </details>
+
+    <hr>
+
+    <form action="/" method="post" id="feedbackForm">
+      <div class="bg-opacity-80 rounded fs-6 m-4 p-5 shadow-lg">
+        <p class="fst-italic fs-1">Feedback form:</p>
+        <label for="Fname" class="mb-2">Name:</label>
+        <input type="text" class="form-control" id="Fname" placeholder="Enter your name">
+        
+        <label for="Textarea" class="form-label">Feedback:</label>
+        <textarea class="form-control" id="Textarea" rows="3"></textarea>
+        
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+    <!-- Message Area -->
+    <p id="message" style="color: green; font-weight: bold;"></p>
+    
+    <script>
+      document.getElementById("feedbackForm").addEventListener("submit", function (event) {
+        event.preventDefault(); 
+        
+        let name = document.getElementById("Fname").value;
+        let feedback = document.getElementById("Textarea").value;
+        let message = document.getElementById("message");
+
+        if (name.trim() === "" || feedback.trim() === "") {
+          message.style.color = "red";
+          message.textContent = "Please fill in all fields.";
+          return;
+        }
+        
+        message.style.color = "green";
+        message.textContent = `Thank you, ${name}! Your feedback has been received.`;
+        document.getElementById("feedbackForm").reset();
+      });
+    </script>
+  </body>
+</html>
