@@ -79,6 +79,10 @@
         font-family: 'Inter', sans-serif;
           color: var(--bookish-text);
          background-color: var(--bookish-cream);
+         body {
+          padding-top: 80px; 
+        }
+        
       }
 
       /* Navbar */
@@ -153,9 +157,6 @@
         text-decoration: none;
       }
 
-      /* Footer */
-     
-
-      /* Responsive Styling */
+      
  
   
