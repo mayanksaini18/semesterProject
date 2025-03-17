@@ -90,23 +90,16 @@
   #navbar {
     transition: all 0.3s;
     background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  /* to  not able to see through the navbar bg of the  page content */
   }
   
-  .navbar-scrolled {
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  }
-  
+ 
 
       /* Main Book Section */
     
 
       /* Book Card */
-      .wrapper {
-        perspective: 1000px;
-      }
+     
 
       .wrapper:hover .book-card {
         transform: rotateY(180deg);
@@ -116,7 +109,7 @@
       .book-card {
         width: 200px;
         height: 280px;
-        box-shadow: 0 0 20px black;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
         border-radius: 15px;
         transform-style: preserve-3d;
         transition: transform 0.8s;
